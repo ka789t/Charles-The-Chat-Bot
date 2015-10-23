@@ -1,0 +1,12 @@
+print ("Welcome to ChatBot! ")
+def start_conversation():
+    name=raw_input("What's your name? ")
+    print(name+", it is a pleasure to meet you.")
+    feeling=raw_input("How are you feeling? "):
+    		while feeling in range["sad","mad","bad"]:
+		   print("I am sorry to hear that.")
+                else:
+                    print("Nice.")
+
+def give_question():
+    lst = ['What is your favorite color? ','What is your favorite animal? ','What is your favorite subject in school? ','What is your favorite type of music? ','
