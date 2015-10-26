@@ -6,11 +6,12 @@ def start_conversation():
     		if feeling in range("sad","mad","bad"):
 		   print("Sorry to hear that.")
                    
-
 def tell_joke
-import random(lst)
-lst=[['How do you drown a hipster?',' Throw him into the mainstream.'],
+     lst=[['How do you drown a hipster?',' Throw him into the mainstream.'],
      ['What do computers have for snacks?','Micro-chips!!!'],
-     ['Why did the computer get cold?','Because he forgot to close windows!!!'],
+     ['Why did the computer ge
+t cold?','Because he forgot to close windows!!!'],
      ['Why did the plane crash?','Because the pilot was a loaf of bread.'],
      ['Why was the boy sad?','Because he had a frog stapled to his face.']]
+     selection= random.coice(lst)
+     print selection
