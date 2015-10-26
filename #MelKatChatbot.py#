@@ -14,7 +14,9 @@ def give_question():
         ['What is your favorite subject in school?','I do not like that one.'],
         ['What is your favorite type of music?','Mine too!'],
         ['If you could be any mythical creature, what would you be?','I would want to be a dragon!'],
-        ['What is your favorite movie?','I wish I could watch movies...']] 
+        ['What is your favorite movie?','I wish I could watch movies...']]
+    selection = random.choice(lst)
+    print selection
 
 def good_bye():
     print("It was nice talking, but I am going to go now. Bye!")
