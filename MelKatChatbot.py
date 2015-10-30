@@ -1,7 +1,6 @@
 
 import random
 
-print ("Welcome to ChatBot! ")
 def start_conversation():
     name=raw_input("What's your name? ")
     print(name+", it is a pleasure to meet you.")
