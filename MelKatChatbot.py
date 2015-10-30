@@ -1,3 +1,6 @@
+
+import random
+
 print ("Welcome to ChatBot! ")
 def start_conversation():
     name=raw_input("What's your name? ")
@@ -20,11 +23,11 @@ def give_question():
     print selection
 
 def good_bye():
-    print("It was nice talking, but I am going to go now. Bye!")
+    print("It was nice talking, but I am going to go now. Bye!") 
 
 def test_give_question():
-    for n in range(20):
+    for n in range(18):
        give_question()
-       
-       
+
 test_give_question()
+    
