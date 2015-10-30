@@ -2,12 +2,13 @@ print ("Welcome to ChatBot! ")
 def start_conversation():
     name=raw_input("What's your name? ")
     print(name+", it is a pleasure to meet you.")
-    feeling=raw_input("How are you feeling? "):
-    		while feeling in range["sad","mad","bad"]:
-		   print("I am sorry to hear that.")
-                else:
-                    print("Nice.")
+    feeling=raw_input("How are you feeling? ")
+    if feeling in ["sad","mad","bad"]:
+        print("I am sorry to hear that.")
+    else:
+        print("Nice.")
 
+        
 def give_question():
     lst = [['What is your favorite animal?','That is a great one.'],
         ['What is your favorite color?','That is my favorite too!'],
@@ -20,3 +21,10 @@ def give_question():
 
 def good_bye():
     print("It was nice talking, but I am going to go now. Bye!")
+
+def test_give_question():
+    for n in range(20):
+       give_question()
+       
+       
+test_give_question()
