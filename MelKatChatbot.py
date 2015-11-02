@@ -1,4 +1,4 @@
-
+#Melanie did all of this
 import random
 
 def start_conversation():
@@ -20,6 +20,7 @@ def give_question():
         ['What is your favorite movie?','I wish I could watch movies...']]
     selection = random.choice(lst)
     print selection
+    # IDK how to make the program use each question only once per game
 
 def good_bye():
     print("It was nice talking, but I am going to go now. Bye!") 
