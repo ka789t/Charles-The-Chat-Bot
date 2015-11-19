@@ -6,17 +6,21 @@ def pretty_print(txt):
     print '* '+txt+' *'
     print '*' * (len(txt)+4)
     
-
-def tell_joke (asked_jokes,n):
-    lst=[['How do you drown a hipster? Throw him into the mainstream.'],
+def welcome_chatbot():
+    pretty_print("Welcome to ChatBot!") 
+    
+def tell_joke (asked_jokes):
+    lst=[['How do you drown a hipster?','Throw him into the mainstream.'],
          ['Why did the computer get cold?','Because he forgot to close windows!!!'],
          ['Why did the plane crash?','Because the pilot was a loaf of bread.'],
          ['Why was the boy sad?','Because he had a frog stapled to his face.']]
     selection = random.choice(lst)
-    asked_jokes=random.choice
     for n in asked_jokes:
         lst.remove(n)
-    print selection
+    question,response = selection
+    pretty_print(question)
+    raw_input('...')
+    pretty_print(response)
     return selection
 
 def test_tell_joke():
@@ -57,18 +61,28 @@ def give_question(already_asked):
     for n in already_asked:
         lst.remove(n)
     selection = random.choice(lst)
-    print selection
+    question,response = selection
+    pretty_print(question)
+    raw_input('...')
+    pretty_print(response)
     return selection
     
 def good_bye():
-    print("It was nice talking, but I am going to go now. Bye!") 
+    pretty_print("It was nice talking, but I am going to go now. Bye!") 
 
 def test_give_question():
     already_asked = []
     for n in range(6):
-        already_asked.append(give_question(already_asked))
+        just_asked = give_question(already_asked)
+        already_asked.append(just_asked)
 
 def play_game():
+    welcome_chatbot()
     start_conversation()
+    already_asked=[]
     give_question(already_asked)
+    asked_jokes=[]
+    asked_jokes=tell_joke(asked_jokes) 
     good_bye()
+
+play_game()
